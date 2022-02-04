@@ -1,0 +1,16 @@
+= Modifying and Pushing this image to Docker Hub
+
+We build the image like so:
+
+  $ docker build -t danyill/antora:custom -f Dockerfile.custom .
+
+We tag the image as latest and the next version:
+
+  $ docker tag danyill/antora:custom danyill/antora:0.2
+  $ sudo docker tag danyill/antora:custom danyill/antora:latest
+
+We ensure that we are logged in to the Docker Hub:
+
+  $ docker push danyill/antora:0.2 # or whatever your version
+  $ docker push danyill/antora:latest
+
