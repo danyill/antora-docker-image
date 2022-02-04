@@ -11,6 +11,10 @@ We tag the image as latest and the next version:
 
 We ensure that we are logged in to the Docker Hub:
 
+  $ docker login
+
+We push a `latest` tag and the version (current increments are `0.1`):
+
   $ docker push danyill/antora:0.2 # or whatever your version
   $ docker push danyill/antora:latest
 
