@@ -7,7 +7,7 @@ We build the image like so:
 We tag the image as latest and the next version:
 
   $ docker tag danyill/antora:custom danyill/antora:0.2
-  $ sudo docker tag danyill/antora:custom danyill/antora:latest
+  $ docker tag danyill/antora:custom danyill/antora:latest
 
 We ensure that we are logged in to the Docker Hub:
 
