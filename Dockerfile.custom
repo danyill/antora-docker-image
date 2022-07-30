@@ -6,4 +6,4 @@ RUN yarn global add xlsx
 RUN yarn global add @antora/pdf-extension
 
 RUN apk update && apk --no-cache add ruby \
-    && gem install asciidoctor-pdf
+    && gem install asciidoctor-pdf asciidoctor-kroki
