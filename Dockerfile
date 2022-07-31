@@ -1,8 +1,8 @@
-FROM node:16-alpine
+FROM node:16-bullseye
 
 ENV NODE_PATH /usr/local/share/.config/yarn/global/node_modules
 
-RUN apk --no-cache add curl findutils jq \
+RUN apt-get update && apt-get -y install curl findutils jq \
     && yarn global add --ignore-optional --silent @antora/cli@latest @antora/site-generator-default@latest \
     && yarn global add --ignore-optional --silent $(grep -o '^isomorphic-git@[^:]*' `yarn global dir`/yarn.lock) \
     && rm -rf $(yarn cache dir)/* \

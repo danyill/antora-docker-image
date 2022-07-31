@@ -1,9 +1,9 @@
-FROM antora/antora
+FROM danyill/antora-base:custom
 
 RUN yarn global add asciidoctor-kroki
 RUN yarn global add @antora/lunr-extension
 RUN yarn global add xlsx
 RUN yarn global add @antora/pdf-extension
 
-RUN apk update && apk --no-cache add ruby \
-    && gem install asciidoctor-pdf asciidoctor-kroki
+RUN apt-get update && apt-get install -y ruby \
+    && gem install asciidoctor-pdf asciidoctor-kroki rouge
