@@ -6,12 +6,12 @@ We build the image like so:
 
 We tag the image as latest and the next version:
 
-  $ docker tag danyill/antora:custom danyill/antora:0.8
+  $ docker tag danyill/antora:custom danyill/antora:0.9
   $ docker tag danyill/antora:custom danyill/antora:latest
 
 Together:
 
-  $ docker tag danyill/antora:custom danyill/antora:0.8 && docker tag danyill/antora:custom danyill/antora:latest
+  $ docker tag danyill/antora:custom danyill/antora:0.9 && docker tag danyill/antora:custom danyill/antora:latest
 
 We ensure that we are logged in to the Docker Hub:
 
@@ -19,12 +19,12 @@ We ensure that we are logged in to the Docker Hub:
 
 We push a `latest` tag and the version (current increments are `0.1`):
 
-  $ docker push danyill/antora:0.8 # or whatever your version
+  $ docker push danyill/antora:0.9 # or whatever your version
   $ docker push danyill/antora:latest
 
 or 
 
-  $ docker push danyill/antora:0.8 && docker push danyill/antora:latest
+  $ docker push danyill/antora:0.9 && docker push danyill/antora:latest
 
 == From scratch
 
