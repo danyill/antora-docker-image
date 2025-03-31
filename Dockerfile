@@ -1,4 +1,4 @@
-FROM node:16-bullseye
+FROM node:20-bullseye
 
 ENV NODE_PATH /usr/local/share/.config/yarn/global/node_modules
 
