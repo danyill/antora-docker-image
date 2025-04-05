@@ -1,5 +1,5 @@
 = Modifying and Pushing this image to Docker Hub
-:version: 0.11
+:version: 0.13
 
 == Building the base image
 
@@ -36,6 +36,12 @@ or
 
 [subs="+attributes"]
   $ docker push danyill/antora:{version} && docker push danyill/antora:latest
+
+We then commit the chawnges and push a tag to our git repository:
+
+[subs="+attributes"]
+  $ git tag v{version} -s -m "A relevant message"
+  $ git push --tags 
 
 == From scratch
 

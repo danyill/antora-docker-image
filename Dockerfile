@@ -1,4 +1,4 @@
-FROM node:20-bullseye
+FROM node:22-bookworm
 
 ENV NODE_PATH /usr/local/share/.config/yarn/global/node_modules
 
