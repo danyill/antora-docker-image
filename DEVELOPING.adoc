@@ -1,5 +1,5 @@
 = Modifying and Pushing this image to Docker Hub
-:version: 0.16
+:version: 0.17
 
 == Building the base image
 

@@ -69,7 +69,7 @@ module.exports = ({
           method,
           headers,
           body,
-          timeout: 9007199254740991,
+          timeout: 30000,
           keepAlive: false,
         };
         return get(opts, (err, res) =>
