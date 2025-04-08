@@ -1,5 +1,5 @@
 = Modifying and Pushing this image to Docker Hub
-:version: 0.17
+:version: 0.18
 
 == Building the base image
 
@@ -32,7 +32,7 @@ We push a `latest` tag and the version (current increments are `0.1`):
   $ docker push danyill/antora:{version} # or whatever your version
   $ docker push danyill/antora:latest
 
-or 
+or together:
 
 [subs="+attributes"]
   $ docker push danyill/antora:{version} && docker push danyill/antora:latest
